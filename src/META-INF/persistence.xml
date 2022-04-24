@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="GameSellShopPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>GUI.Genre</class>
+    <class>GUI.Users</class>
+    <class>GUI.Language</class>
+    <class>GUI.Usertype</class>
+    <class>GUI.Gamessold</class>
+    <class>GUI.Status</class>
+    <class>GUI.Orders</class>
+    <class>GUI.Games</class>
+    <class>GUI.Purchases</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/GameShopDB"/>
+      <property name="javax.persistence.jdbc.user" value="gameshopdbadmin"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="gshopAdmin@123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
